@@ -780,7 +780,7 @@ function buildWebsite() {
 
   if (access) ref += `, accessed ${access}`;
   ref += '.';
-  if (url)    ref += ` ${url}`;
+  if (url)    ref += ` <a href="${url}">${url}</a>`;
   return ref;
 }
 
@@ -828,7 +828,7 @@ function buildPodcast() {
   if (network) ref += `, ${network}`;
   if (access)  ref += `, accessed ${access}`;
   ref += '.';
-  if (url)     ref += ` ${url}`;
+  if (url)     ref += ` <a href="${url}">${url}</a>`;
   return ref;
 }
 
