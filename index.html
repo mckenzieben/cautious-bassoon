@@ -778,9 +778,9 @@ function buildWebsite() {
     ref += `, ${sn}`;
   }
 
-  if (url)    ref += `, ${url}`;
   if (access) ref += `, accessed ${access}`;
   ref += '.';
+  if (url)    ref += ` ${url}`;
   return ref;
 }
 
@@ -826,9 +826,9 @@ function buildPodcast() {
 
   if (series)  ref += `, <em>${series}</em>`;
   if (network) ref += `, ${network}`;
-  if (url)     ref += `, ${url}`;
   if (access)  ref += `, accessed ${access}`;
   ref += '.';
+  if (url)     ref += ` ${url}`;
   return ref;
 }
 
